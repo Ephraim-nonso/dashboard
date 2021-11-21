@@ -12,7 +12,7 @@ nav {
   align-items: center;
 
   flex: 5;
-  margin: 0 150px;
+  margin: 0 70px;
 }
 
 .nav-items {
@@ -49,4 +49,14 @@ nav {
 .nav-items li {
   margin: 0 20px;
   list-style: none;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.image img {
+  margin: 0 10px;
 }

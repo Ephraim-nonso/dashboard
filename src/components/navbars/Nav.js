@@ -1,7 +1,8 @@
 import React from "react";
 import "./Nav.css";
+import Avatar from "../assets/Ellipse 2.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee, faUser } from "@fortawesome/free-solid-svg-icons";
+import { faBell, faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 const Nav = () => {
   return (
@@ -17,10 +18,13 @@ const Nav = () => {
 
         <div className="bell-avatar nav-items">
           <div className="bell">
-            <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon icon={faBell} />
           </div>
           <div className="avatar">
-            <FontAwesomeIcon icon={faCoffee} />
+            <div className="image">
+              <img src={Avatar} alt="avatar" />
+              <FontAwesomeIcon icon={faChevronDown} />
+            </div>
           </div>
         </div>
       </nav>

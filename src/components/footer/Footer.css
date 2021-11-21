@@ -19,6 +19,7 @@ footer {
   background-color: rgb(44, 46, 59);
   margin-top: -3vh;
   padding: 5px 0;
+  border-radius: 0 0 0 15px;
 }
 
 .task-detail {
@@ -29,13 +30,21 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: -100px;
 }
 
 .fx {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(36, 38, 51);
+  padding: 7px 10px;
 }
 .fx h6 {
   margin: 0 10px;
+}
+
+.fx:nth-child(2),
+.fx:nth-child(4) {
+  margin-left: 10px;
 }
