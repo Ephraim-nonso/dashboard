@@ -1,0 +1,52 @@
+/* Navigation styling */
+.nav-section {
+  display: flex;
+  height: 10vh;
+  color: #fff;
+  background-color: rgb(36, 38, 51);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  flex: 5;
+  margin: 0 150px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-items li {
+  color: #ccc;
+  position: relative;
+  cursor: pointer;
+}
+.nav-items li:hover {
+  color: #fff;
+}
+
+.nav-items li::before {
+  content: "";
+  width: 0%;
+  border-bottom: 2px solid #fff;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-bottom: 20px;
+}
+
+.nav-items li:hover::before {
+  width: 100%;
+}
+
+.bell-avatar .bell,
+.nav-items li {
+  margin: 0 20px;
+  list-style: none;
+}
